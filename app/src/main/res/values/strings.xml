@@ -1,0 +1,53 @@
+<resources>
+    <string name="app_name">Abotorab</string>
+    <string name="submit">تایید</string>
+    <string name="cabinet_take">تحویل گرفتن</string>
+    <string name="init">راه اندازی اولیه</string>
+    <string name="report">گزارش گیری</string>
+    <string name="cabinet_give">تحویل دادن</string>
+
+    <string name="phoneNumberHint">شماره تماس</string>
+    <string name="cancel">انصراف</string>
+    <string name="register_count">پذیرش شده</string>
+    <string name="password">رمز عبور</string>
+    <string name="error">خطا</string>
+    <string name="successful">موفق</string>
+    <string name="first_name">نام</string>
+    <string name="last_name">نام خانوادگی</string>
+    <string name="usernameHint">نام کاربری</string>
+    <string name="countryHint">کشور</string>
+    <string name="passportIdHint">شماره گذرنامه</string>
+    <string name="bag">کیف</string>
+    <string name="suitcase">چمدان</string>
+    <string name="pram">کالسکه</string>
+    <string name="take">تحویل گرفتن</string>
+    <string name="camera_permission_warning">دسترسی به دوربین فراهم نشد</string>
+    <string name="rowsCount">ردیف</string>
+    <string name="columnsCount">ستون</string>
+
+    <string name="cabinet_format">قفسه شماره %s</string>
+    <string name="row_and_column_format">ستون: %d - ردیف:‌ %d</string>
+    <string name="search">جست و جو</string>
+
+    <string name="camera_permission_message">برای اسکن لازم است مجوز دسترسی به دوربین را به برنامه بدهید</string>
+    <string name="permisson_ok">موافقم</string>
+    <string name="permission_deny">فعلا نه</string>
+    <string name="no_camera_permission">دسترسی به دوربین داده نشد</string>
+    <string name="unusable">غیرقابل استفاده</string>
+    <string name="usable">قابل استفاده</string>
+    <string name="favorite">محبوب</string>
+    <string name="store">انتقال به انبار</string>
+    <string name="empty">خالی کردن</string>
+    <string name="print">پرینت</string>
+
+    <string name="code_format">شماره : %d</string>
+    <string name="reserved_code_format">شماره : %d - رزرو شده %s</string>
+    <string name="confirm">پس از اسکن رسید تایید گرفته شود</string>
+    <string name="your_wifi_is_off">وای فای موبایل شما خاموش است</string>
+    <string name="please_turn_the_wifi_on_and_continue">لطفا وای فای خود را روشن کرده و سپس ادامه دهید</string>
+    <string name="ok">باشه</string>
+    <string name="depository_code">شماره امانت داری</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+
+</resources>

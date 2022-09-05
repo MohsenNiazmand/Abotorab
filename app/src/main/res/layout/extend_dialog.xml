@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+            android:id="@+id/labels"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+        <TextView
+                android:id="@+id/rowsLabel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/rowsCount"
+                android:visibility="gone"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+
+        <TextView
+                android:id="@+id/columnsLabel"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:gravity="center"
+                android:text="@string/columnsCount"
+                android:textColor="@color/colorPrimary"
+                android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/steppers"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/labels"
+            android:layout_marginTop="8dp"
+            android:gravity="center">
+
+
+        <nl.dionsegijn.steppertouch.StepperTouch
+                android:id="@+id/rowsCount"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                android:visibility="gone"
+                app:stepperBackgroundColor="@color/colorAccent" />
+
+
+        <nl.dionsegijn.steppertouch.StepperTouch
+                android:id="@+id/columnsCount"
+                android:layout_width="100dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="12dp"
+                android:layout_marginLeft="12dp"
+                app:stepperBackgroundColor="@color/colorAccent" />
+
+    </LinearLayout>
+
+
+</RelativeLayout>

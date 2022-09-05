@@ -1,0 +1,91 @@
+<!-- Clickable and selectableItemBackground are optional -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/two_line_item"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?selectableItemBackground"
+        android:clickable="true"
+        android:focusable="true"
+        android:minHeight="60dp"
+        android:paddingStart="16dp"
+        android:paddingLeft="16dp"
+        android:paddingEnd="16dp"
+        android:paddingRight="16dp">
+
+    <Button
+            android:id="@+id/button"
+            android:layout_width="64dp"
+            android:layout_height="32dp"
+            android:layout_centerVertical="true"
+            android:padding="2dp"
+            android:textSize="12sp"
+            android:textColor="@color/white"
+            android:background="@drawable/action_bg"
+            android:text="تحویل" />
+
+
+    <LinearLayout
+            android:id="@+id/lines_container"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_toStartOf="@+id/secondary_action"
+            android:layout_toLeftOf="@+id/secondary_action"
+            android:gravity="right"
+            android:orientation="vertical"
+            android:paddingTop="16dp"
+            android:paddingBottom="16dp">
+
+        <TextView
+                android:id="@+id/title"
+                style="@style/TextAppearance.AppCompat.Body1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                tools:text="First Line" />
+
+        <TextView
+                android:id="@+id/phoneNumber"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                tools:text="Second Line" />
+
+        <TextView
+                android:id="@+id/cabinet"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                tools:text="Second Line" />
+
+        <TextView
+                android:id="@+id/subTitle"
+                style="@style/TextAppearance.AppCompat.Caption"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:singleLine="true"
+                tools:text="Second Line" />
+
+
+    </LinearLayout>
+
+    <!-- Can be replaced by a widget -->
+    <ImageView
+            android:id="@+id/secondary_action"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginStart="16dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"
+            android:scaleType="centerInside"
+            android:src="@mipmap/avatar" />
+</RelativeLayout>

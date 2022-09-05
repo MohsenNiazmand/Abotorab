@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/accounting_main.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_barcode.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_cabinet.xml" value="0.22" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_cabinet_list.xml" value="0.33" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_full_screen.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_give.xml" value="0.25" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_main.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_passport_scanner.xml" value="0.25" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_recent_gives.xml" value="0.2" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_report.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/activity_take.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/cabinet.xml" value="0.5" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/cabinet_item.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/cabinet_popup.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/dialog_wifi.xml" value="0.2942708333333333" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/extend_dialog.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/fragment_scan_passport.xml" value="0.5348958333333333" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/give_verification.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/item_country.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/item_delivery.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/item_pilgirim.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/progress_dialog_material.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/try_to_find_empty_cell_dialog.xml" value="0.5364583333333334" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/wifi_checker.xml" value="0.2942708333333333" />
+        <entry key="..\:/projects/Synatech/Abotorab-master/app/src/main/res/layout/wifi_ckecker.xml" value="0.2942708333333333" />
+        <entry key="..\:/projects/Synatech/android/Abotorab-master/app/src/main/res/layout/accounting_main.xml" value="0.2911458333333333" />
+        <entry key="..\:/projects/Synatech/android/Abotorab-master/app/src/main/res/layout/activity_cabinet.xml" value="0.23645833333333333" />
+        <entry key="..\:/projects/Synatech/android/Abotorab-master/app/src/main/res/layout/activity_cabinet_list.xml" value="0.23645833333333333" />
+        <entry key="..\:/projects/Synatech/android/Abotorab-master/app/src/main/res/layout/activity_take.xml" value="0.18611111111111112" />
+        <entry key="..\:/projects/Synatech/android/Abotorab-master/app/src/main/res/layout/cabinet.xml" value="0.23645833333333333" />
+        <entry key="..\:/projects/Synatech/android/Abotorab-master/app/src/main/res/layout/cabinet_item.xml" value="0.23645833333333333" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
+</project>

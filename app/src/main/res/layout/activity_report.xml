@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/rootLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@mipmap/background"
+        tools:context=".view.page.operation.ReportActivity">
+
+    <TextView
+            android:id="@+id/header"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:gravity="center"
+            android:text="گزارش گیری"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold" />
+
+    <TextView
+            android:id="@+id/subHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/header"
+            android:alpha="1"
+            android:layout_marginStart="24dp"
+            android:layout_marginEnd="24dp"
+            android:gravity="right"
+            android:text="گزارش محموله های تحویل داده شده را میتوانید در این صفحه دنبال کنید:"
+            android:textColor="@color/white"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+    <com.llollox.androidtoggleswitch.widgets.ToggleSwitch
+        android:id="@+id/switchButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/subHeader"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="72dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginRight="72dp"
+        app:textToggleLeft="گزارش ساعتی"
+        app:textToggleRight="گزارش محموله‌ها" />
+
+    <RelativeLayout
+            android:id="@+id/chartLayout"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:layout_below="@id/switchButton"
+            android:layout_marginTop="24dp"
+            android:background="@color/white"
+            android:padding="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exportButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/chartLayout"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:text="دانلود گزارش کامل (اکسل)"
+            android:padding="12dp"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/exportStoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/exportButton"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="12dp"
+            android:layout_marginRight="72dp"
+            android:layout_marginLeft="72dp"
+            android:text=" دانلود گزارش انبار (اکسل)"
+            android:padding="12dp"/>
+
+</RelativeLayout>

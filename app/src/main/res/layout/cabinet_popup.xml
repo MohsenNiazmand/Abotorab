@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        android:padding="8dp">
+
+    <TextView
+            android:id="@+id/cabinetCode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="1011"
+            android:textStyle="bold"/>
+
+    <LinearLayout
+            android:id="@+id/unusable_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/cabinetCode"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+        <TextView
+                android:id="@+id/unusable_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/unusable"
+                android:textSize="14sp" />
+
+        <ImageView
+                android:id="@+id/unusable_image"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="6dp"
+                android:src="@mipmap/error" />
+    </LinearLayout>
+
+
+    <LinearLayout
+            android:id="@+id/favorite_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/unusable_layout"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+        <TextView
+                android:id="@+id/favorite_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/favorite"
+                android:textSize="14sp" />
+
+        <ImageView
+                android:id="@+id/favorite_image"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="6dp"
+                android:src="@mipmap/star" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/store_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/favorite_layout"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/store_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/store"
+                android:textSize="14sp" />
+
+        <ImageView
+                android:id="@+id/store_image"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="6dp"
+                android:src="@mipmap/search" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/empty_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/store_layout"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:padding="4dp"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/empty_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/empty"
+                android:textSize="14sp" />
+
+        <ImageView
+                android:id="@+id/empty_image"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="6dp"
+                android:src="@mipmap/cabinet_empty" />
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/print_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/empty_layout"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal"
+            android:padding="4dp">
+
+        <TextView
+                android:id="@+id/print_tv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/print"
+                android:textSize="14sp" />
+
+        <ImageView
+                android:id="@+id/print_image"
+                android:layout_width="18dp"
+                android:layout_height="18dp"
+                android:layout_marginStart="6dp"
+                android:src="@drawable/ic_print_black" />
+    </LinearLayout>
+</RelativeLayout>

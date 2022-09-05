@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <dimen name="design_fab_image_size" tools:override="true">48dp</dimen>
+    <dimen name="design_fab_size_normal" tools:override="true">70dp</dimen>
+    <dimen name="design_fab_size_mini" tools:override="true">30dp</dimen>
+    <dimen name="alert_dialog_padding_material">24dp</dimen>
+</resources>

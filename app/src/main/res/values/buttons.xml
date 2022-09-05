@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="icons">
+        <item>@mipmap/briefcase</item>
+        <item>@mipmap/abacus</item>
+        <item>@mipmap/receipt</item>
+        <item>@mipmap/shelves_icon</item>
+    </array>
+    <array name="colors">
+        <item>@color/menuColor</item>
+        <item>@color/menuColor</item>
+        <item>@color/menuColor</item>
+        <item>@color/menuColor</item>
+    </array>
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#0E4C59</color>
+    <color name="colorPrimaryDark">#0E4C59</color>
+    <color name="colorAccent">#0E4C59</color>
+    <color name="trans">#00000000 </color>.
+    <color name="full_screen">#33000000</color>.
+    .
+    <color name="white">#ffffff</color>
+    <color name="black">#000000</color>
+    <color name="rateColor">#965acaaf</color>
+    <color name="menuColor">@color/colorAccent</color>
+    <color name="gray">#6effffff</color>
+    <color name="tiny_transparent">#33242222</color>
+    <color name="action_color">#57B99D</color>
+    <color name="print_color">#38495C</color>
+    <color name="disable_color">#8F8F8F</color>
+    <color name="red">#E53935</color>
+
+</resources>

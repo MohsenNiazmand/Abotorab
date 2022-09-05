@@ -1,0 +1,29 @@
+<!-- Clickable and selectableItemBackground are optional -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/root"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/tiny_transparent"
+        android:focusable="false"
+        android:minHeight="36dp"
+        android:gravity="center"
+        android:paddingStart="?listPreferredItemPaddingLeft"
+        android:paddingLeft="?listPreferredItemPaddingLeft"
+        android:paddingEnd="?listPreferredItemPaddingRight"
+        android:paddingRight="?listPreferredItemPaddingRight">
+
+    <TextView
+            android:id="@+id/persian_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="ایران"/>
+
+    <TextView
+            android:id="@+id/english_text_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Iran"/>
+
+
+</RelativeLayout>
+

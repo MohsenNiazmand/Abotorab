@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "236531196215",
+    "firebase_url": "https://abotorab-e12a3.firebaseio.com",
+    "project_id": "abotorab-e12a3",
+    "storage_bucket": "abotorab-e12a3.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:236531196215:android:b9b1abd69a1278933c3ab2",
+        "android_client_info": {
+          "package_name": "ir.nilva.abotorab"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "236531196215-np42mf4ana9iqcefun32lcrvfib7rnhr.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAv0DCYORKG3cSi4k9Zy1AVXxuwxz1yuo0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "236531196215-np42mf4ana9iqcefun32lcrvfib7rnhr.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
