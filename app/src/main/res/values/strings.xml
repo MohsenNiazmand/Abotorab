@@ -47,6 +47,7 @@
     <string name="please_turn_the_wifi_on_and_continue">لطفا وای فای خود را روشن کرده و سپس ادامه دهید</string>
     <string name="ok">باشه</string>
     <string name="depository_code">شماره امانت داری</string>
+    <string name="text_label">خطا در ارتباط با سرور لطفا از اتصال وای فای اطمینان حاصل کنید</string>
 
     <!-- TODO: Remove or change this placeholder text -->
 

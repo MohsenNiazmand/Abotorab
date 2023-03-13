@@ -11,32 +11,53 @@ fun dp(dps: Int): Int {
     return (dps * scale + 0.5f).toInt()
 }
 
-fun mapCabinetLabel(code: String): String? {
-    val mapping = defaultCache()["ROW_MAPPING"] ?: ""
-    val rowCode = code.substring(2, 3).toInt()
-    val columnCode = code.substring(3).toInt()
-    return if(mapping.isNotEmpty()){
-        val mappedRow = JSONObject(mapping).get(rowCode.toString())
-        FormatHelper.toPersianNumber("$columnCode$mappedRow")
-    } else {
-        FormatHelper.toPersianNumber("$rowCode$columnCode")
-    }
-}
+//fun mapCabinetLabel(code: String): String? {
+//    val mapping = defaultCache()["ROW_MAPPING"] ?: ""
+//    val rowCode = code.substring(2, 3).toInt()
+//    val columnCode = code.substring(3).toInt()
+//    return if(mapping.isNotEmpty()){
+//        val mappedRow = JSONObject(mapping).get(rowCode.toString())
+//        FormatHelper.toPersianNumber("$columnCode$mappedRow")
+//    } else {
+//        FormatHelper.toPersianNumber("$rowCode$columnCode")
+//    }
+//}
 
 
 fun mapCabinetLabelWithCab(code: String): String? {
-    if(code.isEmpty()) return ""
-    val mapping = defaultCache()["ROW_MAPPING"] ?: ""
-    val cabCode = code.substring(0, 2).toInt()
-    val rowCode = code.substring(2, 3).toInt()
-    val columnCode = code.substring(3).toInt()
-    return if(mapping.isNotEmpty()){
-        val mappedRow = JSONObject(mapping).get(rowCode.toString())
-        FormatHelper.toPersianNumber("$columnCode$mappedRow$cabCode")
-    } else {
-        FormatHelper.toPersianNumber("$cabCode$rowCode$columnCode")
+    if (code.isEmpty()) return ""
+    val map: HashMap<Int, String> = hashMapOf(
+        0 to "A",
+        1 to "B",
+        2 to "C",
+        3 to "D",
+        4 to "E",
+        5 to "F",
+        6 to "G",
+        7 to "H",
+        8 to "I",
+        9 to "J"
+    )
+    var label = ""
+
+    for (i in map.keys) {
+        if (code.substring(2, 3).toInt() == (map.keys.indexOf(i))) {
+            label = code.substring(3, 4) + (map[i]) + code.substring(0, 2)
+        }
     }
+    return label
 }
+//    val mapping = defaultCache()["ROW_MAPPING"] ?: ""
+//    val cabCode = code.substring(0, 2).toInt()
+//    val rowCode = code.substring(2, 3).toInt()
+//    val columnCode = code.substring(3).toInt()
+//    return if(mapping.isNotEmpty()){
+//        val mappedRow = JSONObject(mapping).get(rowCode.toString())
+//        FormatHelper.toPersianNumber("$columnCode$mappedRow$cabCode")
+//    } else {
+//        FormatHelper.toPersianNumber("$cabCode$rowCode$columnCode")
+//    }
+//}
 
 fun Context.isWifiConnected(): Boolean {
     val cm =

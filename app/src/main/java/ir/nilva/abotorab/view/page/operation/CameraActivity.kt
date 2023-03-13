@@ -57,8 +57,8 @@ class CameraActivity : BaseActivity(), QRCodeReaderView.OnQRCodeReadListener {
     }
 
     private fun give(barcode: String) {
-        val map: HashMap<Int, String> = hashMapOf(0 to "A", 1 to "B", 2 to "C", 3 to "D", 4 to "E", 5 to "F", 6 to "G", 7 to "H", 8 to "I",9 to "J")
-        var label=""
+//        val map: HashMap<Int, String> = hashMapOf(0 to "A", 1 to "B", 2 to "C", 3 to "D", 4 to "E", 5 to "F", 6 to "G", 7 to "H", 8 to "I",9 to "J")
+//        var label=""
         if (barcode.isNotEmpty()) {
             try {
                 val text = String(
@@ -72,14 +72,12 @@ class CameraActivity : BaseActivity(), QRCodeReaderView.OnQRCodeReadListener {
 
 
 
-                for (i in map.keys){
-                    if (text[4].substring(2,3).toInt()==(map.keys.indexOf(i))){
-                        print(map[i])
-                        label=text[4].substring(3,4)+(map[i])+text[4].substring(0,2)
-                    }
-                }
+//                for (i in map.keys){
+//                    if (text[4].substring(2,3).toInt()==(map.keys.indexOf(i))){
+//                        label=text[4].substring(3,4)+(map[i])+text[4].substring(0,2)
+//                    }
+//                }
 
-                Log.i("TEEEXT", text.toString())
                 val hashId = text[2]
                 val view = layoutInflater.inflate(R.layout.give_verification, null)
                 view.nickName.text = text[0]
@@ -91,7 +89,7 @@ class CameraActivity : BaseActivity(), QRCodeReaderView.OnQRCodeReadListener {
                     view.phoneNumber.text = "شماره تلفن‌ : $phoneNumber4Digit********"
                 }
 //                view.cellCode.text = "شماره قفسه : ${mapCabinetLabelWithCab(text[4])}"
-                view.cellCode.text = "شماره قفسه : ${label}"
+                view.cellCode.text = "شماره قفسه : ${mapCabinetLabelWithCab(text[4])}"
 
                 confirmToGive(view, hashId, text[4])
             } catch (e: Exception) {

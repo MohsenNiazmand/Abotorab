@@ -28,6 +28,7 @@ class CabinetAdapter(
     var rowDir: Boolean,
     var colDir: Boolean
 ) : BaseAdapter() {
+//    val map: HashMap<Int, String> = hashMapOf(0 to "A", 1 to "B", 2 to "C", 3 to "D", 4 to "E", 5 to "F", 6 to "G", 7 to "H", 8 to "I",9 to "J")
 
     @SuppressLint("ViewHolder")
     override fun getView(p0: Int, p1: View?, p2: ViewGroup?): View =
@@ -63,7 +64,7 @@ class CabinetAdapter(
                 image.setImageResource(cell.getImageResource(false))
             }
             codeTextView.visibility = View.VISIBLE
-            codeTextView.text = mapCabinetLabel(cell.code)
+                    codeTextView.text = mapCabinetLabelWithCab(cell.code)
 
         }
 

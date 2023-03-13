@@ -68,7 +68,7 @@ class MainActivity : BaseActivity() {
         initCircularMenu()
         logout.setOnClickListener { logout() }
         sendCachedHashes2Server()
-        fillHeader()
+//        fillHeader()
         val depositoryName = defaultCache()["depository"] ?: "امانت داری";
         labelTextView.text = depositoryName
     }
@@ -118,6 +118,7 @@ class MainActivity : BaseActivity() {
     override fun onResume() {
         super.onResume()
         openMenu()
+        fillHeader()
     }
 
 }

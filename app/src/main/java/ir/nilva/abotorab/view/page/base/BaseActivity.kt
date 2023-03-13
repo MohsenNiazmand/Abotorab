@@ -11,11 +11,14 @@ import android.graphics.drawable.ColorDrawable
 import android.net.wifi.WifiManager
 import android.os.Build
 import android.os.Bundle
+import android.os.Handler
 import android.view.Window
 import android.view.WindowManager
 import android.widget.Button
 import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import androidx.coordinatorlayout.widget.CoordinatorLayout
+import com.google.android.material.snackbar.Snackbar
 import io.github.inflationx.calligraphy3.CalligraphyConfig
 import io.github.inflationx.calligraphy3.CalligraphyInterceptor
 import io.github.inflationx.viewpump.ViewPump
@@ -24,10 +27,13 @@ import ir.nilva.abotorab.R
 import ir.nilva.abotorab.db.AppDatabase
 import ir.nilva.abotorab.helper.defaultCache
 import ir.nilva.abotorab.helper.set
+import ir.nilva.abotorab.helper.toastWarning
 import ir.nilva.abotorab.view.page.main.LoginActivity
+import kotlinx.android.synthetic.main.item_country.*
 import kotlinx.coroutines.CoroutineScope
 import kotlinx.coroutines.Dispatchers
 import kotlinx.coroutines.launch
+import org.jetbrains.anko.view
 
 
 /**
@@ -35,12 +41,12 @@ import kotlinx.coroutines.launch
  */
 @SuppressLint("Registered")
 open class BaseActivity : AppCompatActivity() {
+    lateinit var snackbar: Snackbar
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         registerReceiver(broadcastReceiver, IntentFilter(WifiManager.WIFI_STATE_CHANGED_ACTION))
         initCalligraphy()
-        checkWifi()
     }
 
     private val broadcastReceiver: BroadcastReceiver = object : BroadcastReceiver() {
@@ -53,8 +59,11 @@ open class BaseActivity : AppCompatActivity() {
         val wifiManager = applicationContext.getSystemService(WIFI_SERVICE) as WifiManager
         try {
             val ip: Int = wifiManager.connectionInfo.ipAddress
-            if (ip==0)
-                showWifiDialog()
+            if (ip == 0)
+                toastWarning(resources.getString(R.string.text_label))
+
+
+
         } catch (e: Exception) {
             e.printStackTrace()
         }

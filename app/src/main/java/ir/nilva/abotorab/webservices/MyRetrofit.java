@@ -51,9 +51,9 @@ public class MyRetrofit {
         interceptor.setLevel(HttpLoggingInterceptor.Level.BODY);
         builder.addInterceptor(interceptor);
         addAuthHeader(builder);
-        builder.connectTimeout(30, TimeUnit.SECONDS);
-        builder.readTimeout(30, TimeUnit.SECONDS);
-        builder.writeTimeout(30, TimeUnit.SECONDS);
+        builder.connectTimeout(3, TimeUnit.MINUTES);
+        builder.readTimeout(3, TimeUnit.MINUTES);
+        builder.writeTimeout(3, TimeUnit.MINUTES);
         OkHttpClient client = builder.build();
 
 
